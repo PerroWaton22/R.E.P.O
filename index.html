@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>R.E.P.O - Descarga Oficial</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -17,49 +16,46 @@
       font-family: 'Rubik', sans-serif;
       background-color: #0a0a0a;
       color: #f1c40f;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
       min-height: 100vh;
-      animation: fadeIn 1s ease-out;
+      padding: 40px 30px;
     }
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      gap: 40px;
     }
 
-    p {
-      color: #cccccc;
-      max-width: 700px;
-      font-size: 1.1em;
-      text-align: center;
-      margin-bottom: 25px;
-      line-height: 1.6;
+    .left {
+      flex: 1;
+      min-width: 300px;
     }
 
-    .game-image {
-      max-width: 95%;
-      border-radius: 12px;
-      box-shadow: 0 0 25px rgba(255, 213, 0, 0.2);
+    .left h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+    }
+
+    .left p {
+      font-size: 1.2em;
+      color: #ccc;
       margin-bottom: 30px;
-      transition: transform 0.3s ease;
-    }
-
-    .game-image:hover {
-      transform: scale(1.02);
+      line-height: 1.6;
+      max-width: 500px;
     }
 
     .btn-download {
       background-color: #f1c40f;
       color: #111;
-      padding: 16px 35px;
-      font-size: 1.2em;
-      font-weight: 700;
-      border: none;
-      border-radius: 10px;
+      padding: 14px 28px;
+      font-size: 1.1em;
+      font-weight: bold;
       text-decoration: none;
+      border-radius: 8px;
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -77,40 +73,76 @@
       height: 20px;
     }
 
+    .right {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right a {
+      display: block;
+      max-width: 500px;
+    }
+
+    .right img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(255, 213, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .right img:hover {
+      transform: scale(1.02);
+    }
+
     footer {
-      margin-top: 50px;
-      font-size: 0.85em;
+      margin-top: 60px;
+      text-align: center;
       color: #777;
+      font-size: 0.9em;
     }
 
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.2em;
+      .left h1 {
+        font-size: 2.5em;
       }
 
       .btn-download {
-        font-size: 1em;
-        padding: 14px 28px;
+        justify-content: center;
       }
     }
   </style>
 </head>
 <body>
-  <h1>R.E.P.O</h1>
-  <p>Sumérgete en una experiencia táctica donde cada decisión importa. Recupera. Enfrenta. Sobrevive. Descarga R.E.P.O ahora y únete a la misión.</p>
 
-  <img src="https://cdn.beahero.gg/2025/04/REPO-Videojuego-Steam.png" alt="Imagen del videojuego R.E.P.O" class="game-image">
+  <div class="container">
+    <div class="left">
+      <h1>R.E.P.O</h1>
+      <p>
+        Sumérgete en una experiencia táctica llena de acción y estrategia. Enfréntate a enemigos, recupera objetos vitales y cumple tu misión como agente de élite. ¿Estás preparado?
+      </p>
+      <a class="btn-download" href="https://akirabox.com/dkD3YlEylmLQ/file" target="_blank">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18l-7 7h4v6h6v-6h4l-7-7z"/></svg>
+        Descargar R.E.P.O
+      </a>
+    </div>
 
-  <a class="btn-download" href="https://akirabox.com/dkD3YlEylmLQ/file" target="_blank">
-    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18l-7 7h4v6h6v-6h4l-7-7z"/></svg>
-    Descargar R.E.P.O
-  </a>
+    <div class="right">
+      <a href="https://cdn.beahero.gg/2025/04/REPO-Videojuego-Steam.png" target="_blank">
+        <img src="https://cdn.beahero.gg/2025/04/REPO-Videojuego-Steam.png" alt="Imagen del videojuego R.E.P.O">
+      </a>
+    </div>
+  </div>
 
   <footer>&copy; 2025 R.E.P.O Project - Todos los derechos reservados</footer>
+
 </body>
 </html>
