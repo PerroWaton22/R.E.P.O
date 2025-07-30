@@ -2,85 +2,115 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>🎮 REPO</title>
-  <meta name="title" content="🎮 REPO" />
-  <meta name="description" content="Descarga directa del juego REPO en su versión de Steam. Sin publicidad, sin acortadores." />
-
-  <!-- Open Graph para Discord -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://perrowaton22.github.io/R.E.P.O/" />
-  <meta property="og:title" content="🎮 REPO" />
-  <meta property="og:description" content="Descarga directa del juego REPO en su versión de Steam. Sin publicidad, sin acortadores." />
-  <meta property="og:image" content="https://raw.githubusercontent.com/PerroWaton22/R.E.P.O/main/R.png" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>R.E.P.O - Descarga Oficial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #eee;
-      text-align: center;
-      padding: 50px;
+      font-family: 'Rubik', sans-serif;
+      background-color: #0a0a0a;
+      color: #f1c40f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+      animation: fadeIn 1s ease-out;
     }
 
     h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
+      font-size: 3em;
+      margin-bottom: 0.2em;
     }
 
-    p.description {
-      font-size: 18px;
-      margin-bottom: 30px;
+    p {
+      color: #cccccc;
+      max-width: 700px;
+      font-size: 1.1em;
+      text-align: center;
+      margin-bottom: 25px;
+      line-height: 1.6;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
+    .game-image {
+      max-width: 95%;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 255, 0, 0.2);
+      box-shadow: 0 0 25px rgba(255, 213, 0, 0.2);
       margin-bottom: 30px;
+      transition: transform 0.3s ease;
     }
 
-    a.button {
-      display: inline-block;
-      padding: 15px 30px;
-      background-color: #ff0;
-      color: #000;
-      font-weight: bold;
+    .game-image:hover {
+      transform: scale(1.02);
+    }
+
+    .btn-download {
+      background-color: #f1c40f;
+      color: #111;
+      padding: 16px 35px;
+      font-size: 1.2em;
+      font-weight: 700;
+      border: none;
+      border-radius: 10px;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 5px 15px rgba(241, 196, 15, 0.4);
+      transition: all 0.2s ease-in-out;
     }
 
-    a.button:hover {
-      background-color: #ffc107;
+    .btn-download:hover {
+      background-color: #ddb000;
+      transform: translateY(-2px);
     }
 
-    .info {
-      margin-top: 30px;
-      font-size: 16px;
-      color: #ccc;
+    .btn-download svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.85em;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2em;
+      }
+
+      .btn-download {
+        font-size: 1em;
+        padding: 14px 28px;
+      }
     }
   </style>
 </head>
 <body>
+  <h1>R.E.P.O</h1>
+  <p>Sumérgete en una experiencia táctica donde cada decisión importa. Recupera. Enfrenta. Sobrevive. Descarga R.E.P.O ahora y únete a la misión.</p>
 
-  <h1>🎮 REPO</h1>
+  <img src="https://cdn.beahero.gg/2025/04/REPO-Videojuego-Steam.png" alt="Imagen del videojuego R.E.P.O" class="game-image">
 
-  <p class="description">Descarga directa del juego REPO en su versión de Steam. Sin publicidad, sin acortadores.</p>
+  <a class="btn-download" href="https://akirabox.com/dkD3YlEylmLQ/file" target="_blank">
+    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18l-7 7h4v6h6v-6h4l-7-7z"/></svg>
+    Descargar R.E.P.O
+  </a>
 
-  <img src="https://raw.githubusercontent.com/PerroWaton22/R.E.P.O/main/R.png" alt="REPO Portada">
-
-  <div style="margin: 30px 0;">
-    <a href="https://akirabox.com/dkD3YlEylmLQ/file" target="_blank" class="button">📥 Descargar Ahora</a>
-  </div>
-
-  <div class="info">
-    ✅ Link directo<br>
-    ✅ Sin acortadores molestos<br>
-    ✅ Subido por: <strong>El Enemigos</strong>
-  </div>
-
+  <footer>&copy; 2025 R.E.P.O Project - Todos los derechos reservados</footer>
 </body>
 </html>
